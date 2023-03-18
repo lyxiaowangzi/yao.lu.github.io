@@ -1,47 +1,96 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>YAO LU - Personal Research Website</title>
+	<title>YAO LU - 学术个人网站</title>
+	<style>
+		body {
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.container {
+			position: relative;
+			height: 100vh;
+			width: 100%;
+			background-color: transparent;
+			background-image: url('https://cdn.pixabay.com/photo/2017/08/10/02/05/artificial-intelligence-2614277_960_720.jpg');
+			background-position: center;
+			background-size: cover;
+			overflow: hidden;
+		}
+
+		.animate {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-image: url('https://cdn.pixabay.com/photo/2018/03/31/19/29/mesh-3279361_960_720.png');
+			background-position: center;
+			background-size: cover;
+			animation: animate-bg 15s ease infinite;
+		}
+
+		@keyframes animate-bg {
+			0% {
+				transform: translate(0, 0);
+			}
+			100% {
+				transform: translate(-50%, -50%);
+			}
+		}
+	</style>
 </head>
 <body>
-	<header>
-		<h1>Yao Lu</h1>
-		<nav>
-			<ul>
-				<li><a href="#research">Research</a></li>
-				<li><a href="#publications">Publications</a></li>
-				<li><a href="#teaching">Teaching</a></li>
-				<li><a href="#Introduction"></a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-		<section id="research">
-			<h2>Research</h2>
-			<p>Cloud Computing、Edge Computing</p>
-		</section>
-
-		<section id="publications">
-			<h2>出版物</h2>
-			<p>Y. Lu, L. Liu, J. Panneerselvam, B. Yuan, J. Gu and N. Antonopoulos, "A GRU-Based Prediction Framework for Intelligent Resource Management at Cloud Data Centres in the Age of 5G," 
+	<div class="container">
+		<div class="animate"></div>
+		<header>
+			<h1>你的名字</h1>
+			<nav>
+				<ul>
+					<li><a href="#research">研究</a></li>
+					<li><a href="#publications">出版物</a></li>
+					<li><a href="#teaching">教学</a></li>
+					<li><a href="#cv">CV</a></li>
+				</ul>
+			</nav>
+		</header>
+	
+		<main>
+			<section id="research">
+				<h2>研究</h2>
+				<p></p>
+			</section>
+	
+			<section id="publications">
+				<h2>出版物</h2>
+				<p>Y. Lu, L. Liu, J. Panneerselvam, B. Yuan, J. Gu and N. Antonopoulos, "A GRU-Based Prediction Framework for Intelligent Resource Management at Cloud Data Centres in the Age of 5G," 
 				in IEEE Transactions on Cognitive Communications and Networking, vol. 6, no. 2, pp. 486-498, June 2020, doi: 10.1109/TCCN.2019.2954388.</p>
-		</section>
-
-		<section id="teaching">
-			<h2>教学</h2>
-			<p>列出你的教学经验和课程，如果有的话，提供链接</p>
-		</section>
-
-		<section id="Introduction">
-			<h2>introduction</h2>
-			<p>I got the PHD degree form University of Leicester</p>
-		</section>
-	</main>
-
-	<footer>
-		<p>版权 © 2023 Yao Lu</p>
-	</footer>
+			</section>
+	
+			<section id="teaching">
+				<h2>教学</h2>
+				<p>列出你的教学经验和课程，如果有的话，提供链接</p>
+			</section>
+	
+			<section id="cv">
+				<h2>CV</h2>
+				<p>提供你的CV，并包括联系信息</p>
+			</section>
+		</main>
+	
+		<footer>
+			<p>版权 © 2023 你的名字</p>
+		</footer>
+	</div>
 </body>
 </html>
+
